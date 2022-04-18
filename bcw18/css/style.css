@@ -63,3 +63,182 @@ div.desc {
     padding: 15px;
     text-align: center;
 }
+
+input[type=text],
+select,
+textarea,
+input[type=date],
+input[type=password],
+input[type=email],
+input[type=range] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit],
+input[type=reset] {
+    background-color: #390b82;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin: 10px;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: #5365c8;
+    transition: 0.9s;
+}
+
+.formContainer {
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+}
+
+.col-20 {
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+    text-align: right;
+}
+
+.col-70 {
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+}
+
+.formRow:after {
+    content: "";
+    display: table;
+    clear: both;
+    justify-items: flex-start;
+}
+
+.leftColumn {
+    float: left;
+    width: 75%;
+}
+
+.rightColumn {
+    float: left;
+    width: 25%;
+    background-color: aliceblue;
+    padding-left: 20px;
+}
+
+.img {
+    background-color: #ccc;
+    width: 100%;
+    padding: 20px;
+    background-size: cover;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #7681fc;
+    margin-top: 20px;
+    color: azure;
+    font-weight: bold;
+}
+
+.footerSocial {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footerSocial>div {
+    width: 30px;
+    margin: 10px;
+    text-align: center;
+}
+
+.footerSocial>div>img {
+    width: 40px;
+}
+
+.footerSocial>div>img:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.footerSocial>div>p {
+    font: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+
+    .leftColumn,
+    .rightColumn {
+        width: 100%;
+        padding: 0;
+    }
+
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .col-20,
+    .col-70,
+    input[type=submit],
+    input[type=reset] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .leftColumn,
+    .rightColumn {
+        width: 100%;
+        padding: 0;
+    }
+}
